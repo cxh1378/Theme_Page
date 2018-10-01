@@ -1,0 +1,30 @@
+<html>
+  <body>   
+  <script>
+  function a(){
+            // var str =document.getElementById("p1").innerHTML;
+            var str ='<img src="image/2.jpg" width="370px" height="600px"/>';
+            var str1 ='蜡笔小新的本人';
+            var subStr=new RegExp('本人');
+            var subStr1=new RegExp('2');
+            var result1=str1.replace(subStr,"爸爸");
+            var result2=str1.replace(subStr,"妈妈");
+            var result3=str1.replace(subStr,"妹妹");
+            var result4 = str.replace(subStr1,'8');
+            var result5 = str.replace(subStr1,'9');
+            var result6 = str.replace(subStr1,'10');
+  function b(obj){
+    if(obj.innerHTML=="蜡笔小新的本人")
+      {obj.innerHTML=(result1);document.getElementById("p1").innerHTML=(result4);}
+    else if(obj.innerHTML=="蜡笔小新的爸爸")
+      {obj.innerHTML=(result2);document.getElementById("p1").innerHTML=(result5);}
+    else if(obj.innerHTML=="蜡笔小新的妈妈")
+      {obj.innerHTML=(result3);document.getElementById("p1").innerHTML=(result6);}         
+    else if(obj.innerHTML=="蜡笔小新的妹妹")
+      {obj.innerHTML=(str1);document.getElementById("p1").innerHTML=(str);} }   
+    return b;   }
+  </script>
+  <center><button style="width:120px;height:40px;" onclick="a()(this)">蜡笔小新的本人</button></center>
+  <p id="p1"><img src="image/2.jpg" width="370px" height="600px"/></p>
+  </body>
+  </html>

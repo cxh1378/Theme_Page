@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta  charset="utf-8" />
+</head>
+
+<body>
+<!--<img src="image/3.gif" width="370" height="650" />
+<li><a href="l.html">蜡笔小新的父亲</a></li>
+<li><a href="m.html">蜡笔小新的母亲</a></li>
+<li><a href="n.html">蜡笔小新的妹妹</a></li>-->
+
+
+
+
+<script> 
+~function(){ 
+var curIndex=0; 
+var yes=Math.ceil(Math.random()*10); 
+//var yes=Math.ceil(Math.random()*35)+'yes'; 
+var timeInterval=1500; 
+var arr=new Array(); 
+
+document.write('<body style="color:;"  width="370" height="600" id='+yes+'>'+arguments[0]+'</body>');
+//document.write('<span id='+yes+'>'+arguments[0]+'</span>');
+var me=arguments; 
+setInterval(function() 
+{ 
+var obj=document.getElementById(yes); 
+if (curIndex==me.length-1) 
+{ 
+curIndex=0; 
+} 
+else 
+{ 
+curIndex+=1; 
+} 
+obj.innerHTML=me[curIndex]; 
+} 
+,timeInterval); 
+}('<h2>蜡笔小新</h2><br><img src="image/2.jpg" width="370" height="590" /><a href="c+.html">正则、关键字、修改按钮名称</a>',
+'<h2>蜡笔小新的父亲</h2><br><img src="image/8.jpg" width="370" height="590" /><a href="c+.html">正则、关键字、修改按钮名称</a>',
+'<h2>蜡笔小新的母亲</h2><br><img src="image/9.jpg" width="370" height="590" /><a href="c+.html">正则、关键字、修改按钮名称</a>',
+'<h2>蜡笔小新的妹妹</h2><br><img src="image/10.jpg" width="370" height="590" /><a href="c+.html">正则、关键字、修改按钮名称</a>')
+
+</script>
+
+<!--<script> 
+~function(){ 
+var curIndex=0; 
+var yes=Math.ceil(Math.random()*10); 
+//var yes=Math.ceil(Math.random()*35)+'yes'; 
+var timeInterval=1500; 
+var arr=new Array(); 
+
+document.write('<body style="background-color:aqua"  width="370" height="680" id='+yes+'>'+arguments[0]+'</body>');
+//document.write('<span id='+yes+'>'+arguments[0]+'</span>');
+var me=arguments; 
+setInterval(function() 
+{ 
+var obj=document.getElementById(yes); 
+if (curIndex==me.length-1) 
+{ 
+curIndex=0; 
+} 
+else 
+{ 
+curIndex+=1; 
+} 
+obj.innerHTML=me[curIndex]; 
+} 
+,timeInterval); 
+}('<img src="image/3.gif" width="370" height="650" />',
+'<img src="image/8.jpg" width="370" height="650" />') 
+
+</script>-->
+</body>
+</html>

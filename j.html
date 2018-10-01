@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta  charset="utf-8" />
+    </head>
+    <body>
+    <!--<div style="background-color:aqua">
+        
+<li>蜡笔小新概况</li>
+<li>姓名：野原新之助  又名：小新 </li>
+<li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li>
+<li>学历：双叶幼稚园向日葵小班</li>
+<li>特长：发射动感光波</li>
+<li>常到的地方：家里</li>
+<li>最崇拜的偶像：动感超人、康达姆机器人 肥嘟嘟左卫门</li>
+<li>最喜欢的食物：布丁、冰淇淋、小熊饼干</li>
+<li>最讨厌的食物：青椒、胡萝卜</li>
+<li>最喜欢的动作：跳屁屁舞、把妈妈的内裤／内衣套在头上,大象舞</li>
+
+</div>-->
+
+<!--<script>
+    var aLi=document.getElementsByTagName("li");
+
+    for(var i=0;i<aLi.length;i++){
+        (function (abc){
+            aLi[abc].onclick=function(){
+                alert(abc)
+            }     
+               })(i)
+     }
+     </script>-->
+
+     <script> 
+~function(){ 
+var curIndex=0; 
+var yes=Math.ceil(Math.random()*10); 
+//var yes=Math.ceil(Math.random()*35)+'yes'; 
+var timeInterval=1500; 
+var arr=new Array(); 
+
+document.write('<body style="background-color:aqua"  width="370" height="680" id='+yes+'>'+arguments[0]+'</body>');
+//document.write('<span id='+yes+'>'+arguments[0]+'</span>');
+var me=arguments; 
+setInterval(function() 
+{ 
+var obj=document.getElementById(yes); 
+if (curIndex==me.length-1) 
+{ 
+curIndex=0; 
+} 
+else 
+{ 
+curIndex+=1; 
+} 
+obj.innerHTML=me[curIndex]; 
+} 
+,timeInterval); 
+}('<li>蜡笔小新概况</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li>' ,
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li><li>常到的地方：家里</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li><li>常到的地方：家里</li><li>最崇拜的偶像：动感超人、康达姆机器人 肥嘟嘟左卫门</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li><li>常到的地方：家里</li><li>最崇拜的偶像：动感超人、康达姆机器人 肥嘟嘟左卫门</li><li>最喜欢的食物：布丁、冰淇淋、小熊饼干</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li><li>常到的地方：家里</li><li>最崇拜的偶像：动感超人、康达姆机器人 肥嘟嘟左卫门</li><li>最喜欢的食物：布丁、冰淇淋、小熊饼干</li><li>最讨厌的食物：青椒、胡萝卜</li>',
+'<li>蜡笔小新概况</li><li>姓名：野原新之助  又名：小新 </li><li>年龄：5岁   身高 ：65厘米   体重：10公斤  血型:O型</li><li>学历：双叶幼稚园向日葵小班</li><li>特长：发射动感光波</li><li>常到的地方：家里</li><li>最崇拜的偶像：动感超人、康达姆机器人 肥嘟嘟左卫门</li><li>最喜欢的食物：布丁、冰淇淋、小熊饼干</li><li>最讨厌的食物：青椒、胡萝卜</li><li>最喜欢的动作：跳屁屁舞、把妈妈的内裤／内衣套在头上,大象舞</li>') 
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<div style="background-color:pink">
+<html>
+<head>
+    <meta  charset="utf-8" />
+</head>
+<body>
+<li>他总是能够在无意间给予人欢笑</li>
+<li>他的搞笑之处在于他的天真</li>
+<li>他的搞笑特点在于不同于喜剧节目扮演出的笑点，目的不明确在搞笑，而处处让人笑喷</li>
+<li>他的世界很简单，一栋房子，几个邻居朋友，简单得让人觉得安详，让人笑得无所顾忌</li>
+<li>他好色，这就是他的搞笑特点之一</li>
+<li>他把所有的大人，所有的地位的人，都当作他的朋友一样，随意、和谐。打破一切紧张的氛围</li>
+
+<script>
+    var aLi=document.getElementsByTagName("li");
+
+    for(var i=0;i<aLi.length;i++){
+        (function (abc){
+            aLi[abc].onclick=function(){
+                alert(abc)
+            }     
+               })(i)
+    }
+    </script>
+</body>
+</div>
+</html>
